@@ -1,6 +1,15 @@
 .nav-link {
     color: white !important;
+    font-size: 30px !important;
 }
 .active {
     color: #18165A !important;
+}
+
+.text-color{
+    color: rgba(255,255,255,1);
+}
+
+.card-title-size {
+    font-size: 100px;
 }
