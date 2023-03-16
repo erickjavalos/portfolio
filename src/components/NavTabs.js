@@ -5,18 +5,16 @@ import './css/styles.css'
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <nav class="navbar navbar-expand-sm">
-      <div class="container-fluid ">
+    <nav className="navbar navbar-expand-sm">
+      <div className="container-fluid">
         <a 
-          class="navbar-brand" 
-          // style={styles.titleName}
           href="#about"
           onClick={() => handlePageChange('About')}
           className={'nav-link title'}
         >
           Erick Avalos
         </a>
-        <ul className="nav nav-tabs justify-content-end">
+        <ul className="nav nav-tabs justify-content-xs-center justify-content-s-center">
           <li className="nav-item">
             <a
               href="#about"
