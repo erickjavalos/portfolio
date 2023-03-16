@@ -1,24 +1,82 @@
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+import '../css/styles.css'
 
-export default function Blog() {
+
+export default function Portfolio() {
   return (
-    <div>
-      <h1>Portfolio Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
+    <>
+    <div className='cards-portfolio text-center text-color mx-auto my-lg-5 p-lg-5 border-radius-card' style={{background: 'rgba(255,255,255,0.25)' }}>
+      <div className="row cards-overview" style={{width:'100%'}}>
+        <div className="row card-title-size text-center">Portfolio</div>
+        <div id="{{recipe_id}}" className="card card-hover">
+            <h4 className="mb-5">recipe name</h4>
+            <p className="mt-4">Difficulty: diff</p>
+            <p>Servings: yuh</p>
+            <p>Total Time: ok</p>
+        </div>
+        
+        <div id="{{recipe_id}}" className="card card-hover">
+            <h4 className="mb-5">recipe name</h4>
+            <p className="mt-4">Difficulty: diff</p>
+            <p>Servings: yuh</p>
+            <p>Total Time: ok</p>
+        </div>
+        <div id="{{recipe_id}}" className="card card-hover">
+            <h4 className="mb-5">recipe name</h4>
+            <p className="mt-4">Difficulty: diff</p>
+            <p>Servings: yuh</p>
+            <p>Total Time: ok</p>
+        </div>
+        <div id="{{recipe_id}}" className="card card-hover">
+            <h4 className="mb-5">recipe name</h4>
+            <p className="mt-4">Difficulty: diff</p>
+            <p>Servings: yuh</p>
+            <p>Total Time: ok</p>
+        </div>
+
+        <div id="{{recipe_id}}" className="card card-hover">
+            <h4 className="mb-5">recipe name</h4>
+            <p className="mt-4">Difficulty: diff</p>
+            <p>Servings: yuh</p>
+            <p>Total Time: ok</p>
+        </div>
+
+        <div id="{{recipe_id}}" className="card card-hover">
+            <h4 className="mb-5">recipe name</h4>
+            <p className="mt-4">Difficulty: diff</p>
+            <p>Servings: yuh</p>
+            <p>Total Time: ok</p>
+        </div>
+      </div>
+      
+
     </div>
+      
+    </>
+    // <Card className="cards-portfolio text-center text-color mx-auto my-lg-5 p-lg-5 border-radius-card" style={{background: 'rgba(255,255,255,0.25)' }}>
+    //   <Card.Body>
+    //     {/* Portfolio top level */}
+    //     <Card.Title className="card-title-size" > Portfolio</Card.Title>
+    //   </Card.Body>
+    //     {/* first project */}
+    //     <Card className="card-portfolio text-color my-lg-5 p-lg-5 border-radius-card" style={{background: 'rgba(255,255,255,0.25)' }}>
+    //       <h1>HELLO </h1>
+    //     </Card>
+    //     <Card className="card-portfolio text-color my-lg-5 p-lg-5 border-radius-card" style={{background: 'rgba(255,255,255,0.25)' }}>
+    //       <h1>HELLO </h1>
+    //     </Card>
+    //     {/* <Card.Img variant="top" src={pfp} className="m-3"style={{width: '150px',height:'150px', borderRadius: '75px'}} />
+    //     <Card.Text className='card-text-size'>
+    //     My name is Erick, I am currently 25 years old based out of Los Angeles, Ca. In 2020, I received a bachelors in Electrical Engineering with a specialization in Signals and Systems. 
+    //     </Card.Text>
+    //     <Card.Text className='card-text-size'>
+    //     I have experience in a variety of fields like robotics, embedded software development, hardware development, blockchain, and web develeopment. 
+    //     </Card.Text>
+    //     <Card.Text className='card-text-size'>
+    //     I have been a software engineer for about 3 years, and am looking to venture into a full stack role.
+    //     </Card.Text> */}
+
+    // </Card>
   );
 }

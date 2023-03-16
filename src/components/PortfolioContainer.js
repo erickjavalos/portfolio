@@ -31,7 +31,7 @@ const combinedStyles = { ...styles.backgroundStyle, ...styles.myText };
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Portfolio');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {

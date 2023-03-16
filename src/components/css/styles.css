@@ -9,13 +9,28 @@
 .card-format {
     width: 95%;
 }
+.cards-portfolio {
+    width:95%;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: stretch; */
+}
+.card-portfolio {
+    width: 25%;
+    /* flex: 0 1 50px; */
+    /* margin: 10px; */
+    /* border: 1px solid #ccc; */
+    /* box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3); */
 
+}
 .text-color{
     color: rgba(255,255,255,1);
 }
 
 .card-title-size {
     font-size: 15px !important;
+    justify-content: center;
+    margin-bottom: 10px;
 }
 .card-text-size {
     font-size: 12px !important;
@@ -25,6 +40,7 @@
     border-radius: 2em !important;
 
 }
+
 
 .title {
     font-size: 20px !important;
@@ -36,6 +52,26 @@
 .nav {
     margin-left: auto;
     margin-right: auto;
+}
+
+.cards-overview {
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    margin: 20px;
+    width: 100%;
+    flex: 0 1 300px;
+    border: 7px double var(--dark);
+    border-radius: 10px;
+    background-color: var(--light);
+    color: var(--dark);
+  }
+.card-hover:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
@@ -103,4 +139,8 @@
     }
 }
  
-/* Extra large devices (large desktops, 1200px and up) */
+
+
+
+
+
