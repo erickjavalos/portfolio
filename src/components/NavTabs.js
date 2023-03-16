@@ -1,12 +1,6 @@
 import React from 'react';
 import './css/styles.css'
 
-const styles = {
-  titleName : {
-    fontSize: '40px',
-    color: 'white'
-  },
-}
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
@@ -15,10 +9,10 @@ function NavTabs({ currentPage, handlePageChange }) {
       <div class="container-fluid ">
         <a 
           class="navbar-brand" 
-          style={styles.titleName}
+          // style={styles.titleName}
           href="#about"
           onClick={() => handlePageChange('About')}
-          className={'nav-link'}
+          className={'nav-link title'}
         >
           Erick Avalos
         </a>
