@@ -76,6 +76,13 @@
     background-color: #1B165E;;
     color: var(--secondary);
   }
+
+.card-contact {
+    /* margin: 20px; */
+    width: 100%;
+    /* flex: 0 1 700px; */
+    color: var(--secondary);
+}
 .card-hover:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     background-color: #633FA1 !important;
@@ -118,6 +125,8 @@
 .logo-hover:hover {
     opacity: 0.2;
 }
+
+
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {  

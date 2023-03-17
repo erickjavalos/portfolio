@@ -1,6 +1,4 @@
 import React, { useState } from 'react';
-import NavTabs from './NavTabs';
-import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
@@ -31,24 +29,22 @@ const combinedStyles = { ...styles.backgroundStyle, ...styles.myText };
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('Portfolio');
+  const [currentPage, setCurrentPage] = useState('About');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
-    if (currentPage === 'Home') {
-      return <Home />;
-    }
+
     if (currentPage === 'About') {
-      return <About />;
+      return <About currentPage={currentPage} handlePageChange={handlePageChange}/>;
     }
     if (currentPage === 'Portfolio') {
-      return <Portfolio />;
+      return <Portfolio currentPage={currentPage} handlePageChange={handlePageChange}/>;
     }
     if (currentPage === 'Contact')
     {
-      return <Contact />;
+      return <Contact currentPage={currentPage} handlePageChange={handlePageChange}/>;
     }
-    return <Resume />
+    return <Resume currentPage={currentPage} handlePageChange={handlePageChange}/>
   };
 
   const handlePageChange = (page) => setCurrentPage(page);
@@ -58,7 +54,7 @@ export default function PortfolioContainer() {
     <div style={combinedStyles}>
 
       {/* We are passing the currentPage from state and the function to update it */}
-      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {/* <Header currentPage={currentPage} handlePageChange={handlePageChange} /> */}
       {/* Here we are calling the renderPage method which will return a component  */}
       {renderPage()}
     </div>
