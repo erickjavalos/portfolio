@@ -12,6 +12,15 @@
     background-color: #000;
   }
 
+.background-render {
+    background-repeat: repeat-y;
+    background-image: url(../images/background.png);
+    background-position: 'center';
+    background-size: 'cover';
+    background-Repeat: 'no-repeat';
+    width: '100vw';
+    height: '100vh';
+}
 .nav-link {
     color: white !important;
     font-size: 15px !important;
@@ -129,7 +138,10 @@
 
  
 /* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
-@media (min-width: 768px) {  
+@media (min-width: 300px) {  
+    .card-format {
+        width: 50%;
+    }
     .nav-link {
         color: white !important;
         font-size: 25px !important;
@@ -138,26 +150,57 @@
         color: #18165A !important;
     }
     .card-title-size {
-        font-size: 35px !important;
+        font-size: 20px !important;
     }
     .card-text-size {
-        font-size: 23px !important;
+        font-size: 18px !important;
     }
     
     .border-radius-card {
         border-radius: 2em !important;
     
     }
-    
+    .nav {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
     .title {
         font-size: 40px !important;
         color: white;
+        margin-left: 0px;
+        margin-right: 0px;
     }
+
+    .card-portfolio {
+        margin: 20px;
+        padding: 0px !important;
+        /* width: 512px !important; */
+        flex: 0 1 300px;
+        /* background-color: #1B165E !important; */
+        color: var(--secondary);
+
+        border-radius: 2em !important;
+      }
+    .portfolio-img{
+        border-radius: 2em !important;
+
+    }
+    .pfp{
+        width: 100px;
+        height: 100px;
+    }
+    .input-form{
+        margin-bottom: '30px';
+        border-radius: '18px';
+        border: 'none';
+        padding: '20px';
+        width: '50%';
+      }
 
 }
  
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { 
+@media (min-width: 778px) { 
 
     .card-format {
         width: 50%;

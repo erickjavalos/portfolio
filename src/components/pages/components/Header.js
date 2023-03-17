@@ -6,7 +6,7 @@ import '../../css/styles.css'
 function Header({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-sm">
-      <div className="container-fluid">
+      <div className="container-fluid text-sm-center">
         <a 
           href="#about"
           onClick={() => handlePageChange('About')}

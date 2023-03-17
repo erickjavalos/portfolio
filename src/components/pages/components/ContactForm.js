@@ -6,7 +6,7 @@ const styles = {
   contactForm: {
     background: 'rgba(255,255,255,0.3)',
     color: 'rgba(255,255,255,1)',
-    width: '30%',
+    width: '80%',
     display: 'flex',
     flexWrap: 'wrap'
 
@@ -23,8 +23,8 @@ const styles = {
     borderRadius: '18px',
     border: 'none',
     padding: '20px',
-    width: '500px',
-    height: '15px'
+    width: '100%',
+    // height: '15px'
   },
   inputFormMessage : {
     marginBottom: '30px',
@@ -49,11 +49,17 @@ const styles = {
   messageError : {
     marginBottom: '30px',
     fontStyle: 'italic'
+  },
+  messageSuccess : {
+    marginBottom: '30px',
+    color: '#18165A',
+    fontStyle: 'italic'
   }
 }
 export default function Contact() {
     const [emailError, setEmailError] = useState(false);
     const [messageError, setMessageError] = useState(false);
+    const [emailSuccess, setEmailSuccess] = useState(false);
     const form = useRef();
 
 
@@ -89,13 +95,13 @@ export default function Contact() {
       console.log(name,email,msg)
       if (!emailError && !messageError)
       {
-        console.log('submit')
-        console.log(form.current)
         emailjs.sendForm('service_x6f1kek', 'contact_form', form.current, '1gZVg86B90ynwsurj')
         .then((result) => {
-            console.log(result.text);
+            console.log(result)
+            setEmailSuccess(true)
         }, (error) => {
-            console.log(error.text);
+            console.log(error)
+            setEmailSuccess(false)
         });
       }
       else{
@@ -105,6 +111,7 @@ export default function Contact() {
     };
     return (
       <>
+      <div className='row' >
         <div className="mx-auto p-lg-4 border-radius-card"  style={styles.contactForm}>
           <div className="row text-center card-title-size" style={styles.contactName}>Contact</div>
           <form ref={form} className="form justify-content-center mx-auto" style={{fontSize: "28px"}} onSubmit={handleFormSubmit}>
@@ -138,15 +145,17 @@ export default function Contact() {
               onBlur={handleBlur}
             />
             
-            {messageError && (<div class="text-center" style={styles.messageError}>All fields are required</div>)}
+            {messageError && (<div className="text-center" style={styles.messageError}>All fields are required</div>)}
 
             <button style={styles.button} className="row mx-auto" type="submit">Submit</button>
+
+            {emailSuccess && (<div className="text-center" style={styles.messageSuccess}>Email Submitted!</div>)}
 
           </form>
 
         </div>
         
-
+      </div>
       </>
       
     );

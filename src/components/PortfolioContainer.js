@@ -13,7 +13,7 @@ const styles = {
     backgroundImage: `url(${background})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    backgroundRepeat: 'no-repeat',
+    backgroundRepeat: 'repeat-y',
     width: '100vw',
     height: '100vh',
     // backgroundAtachment:'fixed'
