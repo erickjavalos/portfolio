@@ -8,32 +8,15 @@ import './css/font.css'
 
 // define styles for navbar
 const styles = {
-  // background styling
-  // backgroundStyle: {
-  //   backgroundImage: `url(${background}) `,
-  //   // backgroundColor: '#18181b',
-  //   // backgroundPosition: 'center',
-  //   backgroundSize: '100% 100%',
-  //   // // backgroundRepeat: 'repeat-y',
-  //   // width: '100vw',
-  //   // height: '100vh',
-  //   // height: '100%'
-  //   // minHeight: '100%',
-  //   // objectFit: 'fill'
-  //   // backgroundAtachment:'fixed'
-  // },
-  // gagalin font
+
   myText: {
     fontFamily: 'GagalinRegular, sans-serif',
   }
-
 };
-// combines the style objects into one object
-// const combinedStyles = { ...styles.backgroundStyle, ...styles.myText };
 
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About');
+  const [currentPage, setCurrentPage] = useState('Portfolio');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {
@@ -56,10 +39,7 @@ export default function PortfolioContainer() {
 
   return (
     <div className="background" style={styles.myText}>
-
-      {/* We are passing the currentPage from state and the function to update it */}
-      {/* <Header currentPage={currentPage} handlePageChange={handlePageChange} /> */}
-      {/* Here we are calling the renderPage method which will return a component  */}
+      {/* render content */}
       {renderPage()}
     </div>
   );

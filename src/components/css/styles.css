@@ -25,6 +25,13 @@ html {
     height: 100%;
 }
 
+
+/* Portfolio css */
+.card-portfolio {
+    width: 100%;
+    background-color: #1B165E;;
+  }
+
 @media (min-width: 500px) {  
     .background {
         background-image: url(../images/background.png);

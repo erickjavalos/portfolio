@@ -21,7 +21,7 @@ const styles = {
 
 export default function AboutCard(props) {
   return (
-    <Card className="card-format text-center text-color mx-auto my-5 p-lg-3 border-radius-card" style={styles.card}>
+    <Card className="card-format text-center text-color mx-auto my-5 p-lg-3" style={styles.card}>
       <Card.Body>
         {/* title about me */}
         <Card.Title className="card-title-size" style={styles.titleSize}> About Me</Card.Title>
