@@ -9,15 +9,19 @@ import './css/font.css'
 // define styles for navbar
 const styles = {
   // background styling
-  backgroundStyle: {
-    backgroundImage: `url(${background})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundRepeat: 'repeat-y',
-    width: '100vw',
-    height: '100vh',
-    // backgroundAtachment:'fixed'
-  },
+  // backgroundStyle: {
+  //   backgroundImage: `url(${background}) `,
+  //   // backgroundColor: '#18181b',
+  //   // backgroundPosition: 'center',
+  //   backgroundSize: '100% 100%',
+  //   // // backgroundRepeat: 'repeat-y',
+  //   // width: '100vw',
+  //   // height: '100vh',
+  //   // height: '100%'
+  //   // minHeight: '100%',
+  //   // objectFit: 'fill'
+  //   // backgroundAtachment:'fixed'
+  // },
   // gagalin font
   myText: {
     fontFamily: 'GagalinRegular, sans-serif',
@@ -25,7 +29,7 @@ const styles = {
 
 };
 // combines the style objects into one object
-const combinedStyles = { ...styles.backgroundStyle, ...styles.myText };
+// const combinedStyles = { ...styles.backgroundStyle, ...styles.myText };
 
 
 export default function PortfolioContainer() {
@@ -51,7 +55,7 @@ export default function PortfolioContainer() {
 
 
   return (
-    <div style={combinedStyles}>
+    <div className="background" style={styles.myText}>
 
       {/* We are passing the currentPage from state and the function to update it */}
       {/* <Header currentPage={currentPage} handlePageChange={handlePageChange} /> */}
