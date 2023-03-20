@@ -27,10 +27,96 @@ html {
 
 
 /* Portfolio css */
+
+.portfolio-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.project-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%
+}
+
+.project{
+    background: tomato;
+    padding: 5px;
+    width: 500px;
+    height: 175px;
+    margin: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+/* .cards-portfolio {
+    width:95%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .card-portfolio {
     width: 100%;
-    background-color: #1B165E;;
+    background-color: #1B165E;
+    color: var(--secondary);
   }
+
+.cards-overview {
+    width: 100%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-title-size {
+    font-size: 15px !important;
+    justify-content: center;
+    margin-bottom: 10px;
+    color: rgba(255,255,255,1);
+}
+
+.border-radius-card {
+    border-radius: 2em !important;
+}
+
+.portfolio-img{
+    border-radius: 2em !important;
+
+}
+
+.text {
+    position: relative;
+    top: -250px;
+    color: white;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+.text-sum {
+    position: relative;
+    top: -230px;
+    color: white;
+    font-size: 20px;
+    visibility: hidden;
+} */
+
+/* hover effects */
+/* .card-hover:hover .portfolio-img{
+    opacity: 0.05;
+}
+
+.card-hover:hover .text-sum {
+    visibility: visible;
+    transition: 1s;
+
+} */
+
+
+
 
 @media (min-width: 500px) {  
     .background {
@@ -40,6 +126,52 @@ html {
         font-family: 'GagalinRegular, sans-serif';
     }
 }
+
+
+
+
+@media (min-width: 778px) { 
+
+  
+    .active {
+        color: #18165A !important;
+    }
+    .card-title-size {
+        font-size: 35px !important;
+    }
+    .card-text-size {
+        font-size: 23px !important;
+    }
+    
+    .border-radius-card {
+        border-radius: 2em !important;
+    
+    }
+    .nav {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .title {
+        font-size: 40px !important;
+        color: white;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .card-portfolio {
+        margin: 20px;
+        padding: 0px !important;
+        flex: 0 1 512px;
+        color: var(--secondary);
+
+        border-radius: 2em !important;
+      }
+    .portfolio-img{
+        border-radius: 2em !important;
+
+    }
+}
+
 /* body {
     background-color: #18181b;
 } */
