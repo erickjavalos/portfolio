@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9dd9cf72.css",
+    "main.js": "/static/js/main.2c358e3a.js",
+    "static/media/pfp.png": "/static/media/pfp.ecdbc694e3c288c244e6.png",
+    "static/media/build-dragon.png": "/static/media/build-dragon.d113429afbb8c4c785ad.png",
+    "static/media/background.png": "/static/media/background.b8602e8b438c2017466e.png",
+    "static/media/only-recipes.png": "/static/media/only-recipes.de2a370350fb2446ede2.png",
+    "static/media/Gagalin-Regular.otf": "/static/media/Gagalin-Regular.6bc229310548650a1f24.otf",
+    "static/media/fixed.jpeg": "/static/media/fixed.8aab0a283c716c06dd22.jpeg",
+    "static/media/weather-dashboard.png": "/static/media/weather-dashboard.cd420099fbdb678a6ac8.png",
+    "static/media/marvel-geeks.png": "/static/media/marvel-geeks.128e681ed5ffe5d89770.png",
+    "static/media/javascript-quiz.png": "/static/media/javascript-quiz.3efc765a6f0e4689742c.png",
+    "static/media/workday-planner.png": "/static/media/workday-planner.35155da2c0c2cd552521.png",
+    "static/media/Engineering.pdf": "/static/media/Engineering.9027aa3f940a0f0651bb.pdf",
+    "index.html": "/index.html",
+    "main.9dd9cf72.css.map": "/static/css/main.9dd9cf72.css.map",
+    "main.2c358e3a.js.map": "/static/js/main.2c358e3a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9dd9cf72.css",
+    "static/js/main.2c358e3a.js"
+  ]
+}
