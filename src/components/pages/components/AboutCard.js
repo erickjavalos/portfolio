@@ -5,6 +5,7 @@ const styles = {
   card : {
     background: 'rgba(4,22,90,0.5)',
     width: '70%',
+    // height: '700px',
     borderRadius: '4rem'
   },
   titleSize: {

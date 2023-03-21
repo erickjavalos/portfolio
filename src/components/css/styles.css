@@ -22,7 +22,14 @@ html {
 
 .background {
     background-image: url(../images/background.png);
-    height: 100%;
+    overflow: hidden;
+    /* background-size: cover; */
+    width: 100%;
+
+    min-height: 100vh;
+    /* height: 100vh; */
+    /* background-size: cover; */
+    /* height: 100%; */
 }
 
 
@@ -41,10 +48,10 @@ html {
 }
 
 .project{
-    background: tomato;
-    padding: 5px;
+    /* background: tomato; */
+    /* padding: 5px; */
     width: 500px;
-    height: 175px;
+    height: 300px;
     margin: 10px;
     line-height: 150px;
     color: white;
@@ -52,6 +59,29 @@ html {
     font-size: 3em;
     text-align: center;
 }
+
+.text {
+    position: relative;
+    top: -250px;
+    color: white;
+    font-size: 24px;
+    visibility: hidden;
+}
+
+/* hover effects */
+.card-hover:hover .portfolio-img{
+    opacity: 0.1;
+}
+
+.card-hover:hover .text-sum {
+    visibility: visible;
+    transition: 1s;
+
+}
+.logo-hover:hover {
+    opacity: 0.2;
+}
+
 
 /* .cards-portfolio {
     width:95%;
@@ -120,9 +150,9 @@ html {
 
 @media (min-width: 500px) {  
     .background {
-        background-image: url(../images/background.png);
+        background-image: url(../images/fixed.jpeg);
         /* background-size: 100% 100%; */
-        height: 100vh;
+        height: 100%;
         font-family: 'GagalinRegular, sans-serif';
     }
 }

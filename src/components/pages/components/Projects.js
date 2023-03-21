@@ -13,7 +13,7 @@ import buildDragon from '../../images/portolio/build-dragon.png'
 const styles = {
     card : {
         background: 'rgba(4,22,90,0.5)',
-        width: '70%',
+        width: '90%',
         borderRadius: '4rem'
     },
 
@@ -44,6 +44,53 @@ export default function Projects(props) {
                     projectSum="Model-View-Controller Full Stack App"
                     gitRepo="https://github.com/erickjavalos/only-recipes"
                 ></Project>
+
+                {/* Marvel Geek App */}
+                <Project 
+                    deployedLink="https://wiilki.github.io/marvel-geeks-fandom-page/"
+                    projectName ="Marvel Geeks"
+                    projectImg= {marvelGeeks}
+                    projectSum="HTML, CSS, Javascript, and Web APIs App"
+                    gitRepo="https://github.com/wiilki/marvel-geeks-fandom-page"
+                ></Project>
+    
+                {/* Weather dashboard App */}
+                <Project 
+                    deployedLink="https://erickjavalos.github.io/weather-dashboard/"
+                    projectName ="Weather Dashboard"
+                    projectImg= {weather}
+                    projectSum="HTML, CSS, Javascript, and Web APIs App"
+                    gitRepo="https://github.com/erickjavalos/weather-dashboard"
+                >
+                </Project>
+    
+                {/* JavaScript Quiz App */}
+                <Project 
+                    deployedLink="https://erickjavalos.github.io/javascript-quiz/"
+                    projectName ="Javascript Quiz"
+                    projectImg= {javascriptQuiz}
+                    projectSum="HTML, CSS, and Javascript App"
+                    gitRepo="https://github.com/erickjavalos/javascript-quiz"
+                >
+                </Project>
+                {/* JavaScript Quiz App */}
+                <Project 
+                    deployedLink="https://erickjavalos.github.io/work-day-scheduler/"
+                    projectName ="Work Day Scheduler"
+                    projectImg= {workdayPlanner}
+                    projectSum="HTML CSS, and Javascript App"
+                    gitRepo="https://github.com/erickjavalos/work-day-scheduler"
+                >
+                </Project>
+                {/* build your own dragon App */}
+                <Project 
+                    deployedLink="https://erickjavalos.github.io/build-your-own-dragon/"
+                    projectName ="Build Your Own Dragon"
+                    projectImg= {buildDragon}
+                    projectSum="HTML CSS, and Javascript App"
+                    gitRepo="https://github.com/erickjavalos/build-your-own-dragon"
+                >
+                </Project>
             </div>
         </>
     //     <>
