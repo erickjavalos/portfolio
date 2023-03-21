@@ -15,6 +15,13 @@ const styles = {
     aEle : {
       display: 'block',
     },
+    text: {
+      position: 'relative',
+      top: '-250px',
+      color: 'white',
+      fontSize: '24px',
+    }
+
   }
 
 
@@ -29,14 +36,5 @@ export default function Project(props) {
         <p className="text text-sum">{props.projectSum}</p>
       </div>
     </>
-    // <>
-    //   <div className="card-portfolio card-hover" >
-    //       <a className="text-decoration-none" href={props.deployedLink}>
-    //         <img className="portfolio-img" style={styles.portfolioImg}src={props.projectImg}></img>
-    //         {/* <div className="text">{props.projectName} <a href={props.gitRepo}><img className="logo-hover"style={styles.logoImg}src={gitLogo}></img></a></div> */}
-    //         {/* <div className="text-sum">{props.projectSum}</div> */}
-    //      </a>
-    //   </div>
-    // </>
   );
 }

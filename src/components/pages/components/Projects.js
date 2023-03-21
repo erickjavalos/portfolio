@@ -41,7 +41,7 @@ export default function Projects(props) {
                     deployedLink="https://only-recipes-app.herokuapp.com/"
                     projectName ="Recipe Tracker"
                     projectImg= {onlyrecipes}
-                    projectSum="Model-View-Controller Full Stack App"
+                    projectSum="Model-View-Controller Full Stack"
                     gitRepo="https://github.com/erickjavalos/only-recipes"
                 ></Project>
 
