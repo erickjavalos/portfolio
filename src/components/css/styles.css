@@ -40,16 +40,8 @@ html {
     flex-flow: row wrap;
     justify-content: center;
 }
-.project-container {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    width: 100%
-}
 
 .project{
-    /* background: tomato; */
-    /* padding: 5px; */
     width: 500px;
     height: 300px;
     margin: 10px;
@@ -68,6 +60,28 @@ html {
     visibility: hidden;
 }
 
+/* contact form css */
+
+
+.contact-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.contact{
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+
 /* hover effects */
 .card-hover:hover .portfolio-img{
     opacity: 0.1;
@@ -81,7 +95,10 @@ html {
 .logo-hover:hover {
     opacity: 0.2;
 }
-
+.button-hover:hover {
+    opacity: 0.2;
+    color: green;
+}
 
 /* .cards-portfolio {
     width:95%;

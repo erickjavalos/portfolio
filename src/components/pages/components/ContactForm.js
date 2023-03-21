@@ -19,19 +19,21 @@ const styles = {
     color: 'rgba(255,255,255,1)'
   },
   inputForm : {
+    marginTop: '10px',
     marginBottom: '30px',
     borderRadius: '18px',
     border: 'none',
     padding: '20px',
     width: '100%',
-    // height: '15px'
+    height: '15px'
   },
   inputFormMessage : {
+    marginTop: '10px',
     marginBottom: '30px',
     borderRadius: '18px',
     border: 'none',
     padding: '20px',
-    width: '500px',
+    width: '100%',
     height: '300px'
   },
   button: {  
@@ -40,7 +42,8 @@ const styles = {
     marginBottom: '30px',
     borderRadius: '18px',
     border: 'none',
-    padding: '5px'
+    fontSize: '1.5rem',
+    // padding: ''
   },
   emailError : {
     marginBottom: '30px',
@@ -52,8 +55,23 @@ const styles = {
   },
   messageSuccess : {
     marginBottom: '30px',
-    color: '#18165A',
+    color: 'white',
     fontStyle: 'italic'
+  },
+  title: {
+      width: "100%",
+      fontSize: '2rem',
+      color: 'white',
+  },
+  card : {
+    background: 'rgba(4,22,90,0.5)',
+    width: '40%',
+    borderRadius: '4rem',
+  },
+  text: {
+    color: 'white',
+    fontSize: '2rem',
+    width: '100%'
   }
 }
 export default function Contact() {
@@ -92,30 +110,37 @@ export default function Contact() {
       const email = e.target.email.value;
       const msg = e.target.message.value;
 
-      console.log(name,email,msg)
-      if (!emailError && !messageError)
-      {
-        emailjs.sendForm('service_x6f1kek', 'contact_form', form.current, '1gZVg86B90ynwsurj')
-        .then((result) => {
-            console.log(result)
-            setEmailSuccess(true)
-        }, (error) => {
-            console.log(error)
-            setEmailSuccess(false)
-        });
+      if (name && email && msg) {
+        if (!emailError && !messageError)
+        {
+          emailjs.sendForm('service_x6f1kek', 'contact_form', form.current, '1gZVg86B90ynwsurj')
+          .then((result) => {
+              console.log(result)
+              setEmailSuccess(true)
+          }, (error) => {
+              console.log(error)
+              setEmailSuccess(false)
+          });
+        }
+        else{
+          console.log('dont submit')
+        }
+
+        setMessageError(false)
       }
-      else{
-        console.log('dont submit')
+      else {
+
+        setMessageError(true)
       }
+      
 
     };
     return (
       <>
-      <div className='row' >
-        <div className="mx-auto p-lg-4 border-radius-card"  style={styles.contactForm}>
-          <div className="row text-center card-title-size" style={styles.contactName}>Contact</div>
-          <form ref={form} className="form justify-content-center mx-auto" style={{fontSize: "28px"}} onSubmit={handleFormSubmit}>
-            <div className='row'>Name</div>
+       <div className="portfolio-container mx-auto m-5 p-4" style={styles.card}>
+          <h1 className="text-center" style={styles.title}>Contact Me</h1>
+          <form ref={form} className="form justify-content-center mx-auto" style={styles.text} onSubmit={handleFormSubmit}>
+            <h4 className='row' >Name</h4>
             <input
               name="name"
               type="text"
@@ -123,7 +148,7 @@ export default function Contact() {
               style={styles.inputForm}
               onBlur={handleBlur}
             />
-            <div className='row'>Email</div>
+            <h4 className='row'>Email</h4>
            
             <input
               name="email"
@@ -136,7 +161,7 @@ export default function Contact() {
               <div style={styles.emailError}>Please add an "@" in email address!</div>
             )}
 
-            <div className='row'>Message</div>
+            <h4 className='row'>Message</h4>
             <input
               name="message"
               type="text"
@@ -145,16 +170,13 @@ export default function Contact() {
               onBlur={handleBlur}
             />
             
-            {messageError && (<div className="text-center" style={styles.messageError}>All fields are required</div>)}
+            {messageError && (<h4 className="text-center" style={styles.messageError}>* All fields are required</h4>)}
 
-            <button style={styles.button} className="row mx-auto" type="submit">Submit</button>
+            <button style={styles.button} className="row mx-auto px-3 py-1" type="submit">Submit</button>
 
-            {emailSuccess && (<div className="text-center" style={styles.messageSuccess}>Email Submitted!</div>)}
+            {emailSuccess && (<h4 className="text-center" style={styles.messageSuccess}>Email Submitted!</h4>)}
 
           </form>
-
-        </div>
-        
       </div>
       </>
       
