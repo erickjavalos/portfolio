@@ -26,10 +26,7 @@ html {
     /* background-size: cover; */
     width: 100%;
 
-  min-height: 100vh;
-    /* height: 100vh; */
-    /* background-size: cover; */
-    /* height: 100%; */
+    min-height: 100vh;
 }
 
 
@@ -45,7 +42,7 @@ html {
     width: 500px;
     height: 300px;
     margin: 10px;
-    line-height: 150px;
+    /* line-height: 150px; */
     color: white;
     font-weight: bold;
     font-size: 3em;
@@ -54,9 +51,9 @@ html {
 
 .text {
     position: relative;
-    top: -250px;
+    top: -165px;
     color: white;
-    font-size: 24px;
+    font-size: 0.9rem;
     visibility: hidden;
 }
 
@@ -122,72 +119,6 @@ html {
 li {
     list-style-type: none
 }
-li span {
-    /* position: relative; */
-    /* left: -230px; */
-  }
-/* .cards-portfolio {
-    width:95%;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.card-portfolio {
-    width: 100%;
-    background-color: #1B165E;
-    color: var(--secondary);
-  }
-
-.cards-overview {
-    width: 100%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-title-size {
-    font-size: 15px !important;
-    justify-content: center;
-    margin-bottom: 10px;
-    color: rgba(255,255,255,1);
-}
-
-.border-radius-card {
-    border-radius: 2em !important;
-}
-
-.portfolio-img{
-    border-radius: 2em !important;
-
-}
-
-.text {
-    position: relative;
-    top: -250px;
-    color: white;
-    font-size: 24px;
-    visibility: hidden;
-}
-
-.text-sum {
-    position: relative;
-    top: -230px;
-    color: white;
-    font-size: 20px;
-    visibility: hidden;
-} */
-
-/* hover effects */
-/* .card-hover:hover .portfolio-img{
-    opacity: 0.05;
-}
-
-.card-hover:hover .text-sum {
-    visibility: visible;
-    transition: 1s;
-
-} */
-
 
 
 
@@ -245,251 +176,3 @@ li span {
     }
 }
 
-/* body {
-    background-color: #18181b;
-} */
-/* :root {
-    --primary: #000000;
-    --secondary: #ffffff;
-    --tertiary: #5e877f;
-    --quatrinary: #6c6b67;
-    --light: #e3e4e3;
-    --dark: #182c23;
-    --error: rgb(228, 46, 1);
-    --border-radius: 0.3rem;
-    --portfolio-card: purple;
-    
-    background-color: #000;
-  }
-
-.background-render {
-    background-repeat: repeat-y;
-    background-image: url(../images/background.png);
-    background-position: 'center';
-    background-size: 'cover';
-    background-Repeat: 'no-repeat';
-    width: '100vw';
-    height: '100vh';
-}
-.nav-link {
-    color: white !important;
-    font-size: 15px !important;
-    text-align: center;
-}
-.active {
-    color: #18165A !important;
-}
-.card-format {
-    width: 95%;
-}
-.cards-portfolio {
-    width:95%;
-    display: flex;
-    flex-wrap: wrap;
-}
-.text-color{
-    color: rgba(255,255,255,1);
-}
-
-.card-title-size {
-    font-size: 15px !important;
-    justify-content: center;
-    margin-bottom: 10px;
-    color: rgba(255,255,255,1);
-}
-.card-text-size {
-    font-size: 12px !important;
-    color: rgba(255,255,255,1);
-}
-
-.border-radius-card {
-    border-radius: 2em !important;
-
-}
-
-
-.title {
-    font-size: 20px !important;
-    color: white;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.nav {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cards-overview {
-    width: 100%;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card-portfolio {
-    width: 100%;
-    background-color: #1B165E;;
-    color: var(--secondary);
-  }
-
-.card-contact {
-    width: 100%;
-    color: var(--secondary);
-}
-.card-hover:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background-color: #633FA1 !important;
-}
-
-.card-hover:hover .portfolio-img{
-    opacity: 0.05;
-}
-
-.text {
-    position: relative;
-    top: -250px;
-    color: white;
-    font-size: 24px;
-    visibility: hidden;
-}
-
-.text-sum {
-    position: relative;
-    top: -230px;
-    color: white;
-    font-size: 20px;
-    visibility: hidden;
-}
-
-.card-hover:hover .text {
-    visibility: visible;
-    transition: 1s;
-
-}
-
-.card-hover:hover .text-sum {
-    visibility: visible;
-    transition: 1s;
-
-}
-
-.logo-hover:hover {
-    opacity: 0.2;
-}
-
-
- 
-@media (min-width: 300px) {  
-    .card-format {
-        width: 50%;
-    }
-    .nav-link {
-        color: white !important;
-        font-size: 25px !important;
-    }
-    .active {
-        color: #18165A !important;
-    }
-    .card-title-size {
-        font-size: 20px !important;
-    }
-    .card-text-size {
-        font-size: 18px !important;
-    }
-    
-    .border-radius-card {
-        border-radius: 2em !important;
-    
-    }
-    .nav {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .title {
-        font-size: 40px !important;
-        color: white;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .card-portfolio {
-        margin: 20px;
-        padding: 0px !important;
-        flex: 0 1 300px;
-        color: var(--secondary);
-
-        border-radius: 2em !important;
-      }
-    .portfolio-img{
-        border-radius: 2em !important;
-
-    }
-    .pfp{
-        width: 100px;
-        height: 100px;
-    }
-    .input-form{
-        margin-bottom: '30px';
-        border-radius: '18px';
-        border: 'none';
-        padding: '20px';
-        width: '50%';
-      }
-
-}
- 
-@media (min-width: 778px) { 
-
-    .card-format {
-        width: 50%;
-    }
-
-    .nav-link {
-        color: white !important;
-        font-size: 25px !important;
-    }
-    .active {
-        color: #18165A !important;
-    }
-    .card-title-size {
-        font-size: 35px !important;
-    }
-    .card-text-size {
-        font-size: 23px !important;
-    }
-    
-    .border-radius-card {
-        border-radius: 2em !important;
-    
-    }
-    .nav {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .title {
-        font-size: 40px !important;
-        color: white;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
-    .card-portfolio {
-        margin: 20px;
-        padding: 0px !important;
-        flex: 0 1 512px;
-        color: var(--secondary);
-
-        border-radius: 2em !important;
-      }
-    .portfolio-img{
-        border-radius: 2em !important;
-
-    }
-}
- 
-
-
-
-
- */

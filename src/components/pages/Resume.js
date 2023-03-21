@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from './components/Header';
+import Footer from './components/Footer/Footer.js';
 import resume from '../resume/Engineering.pdf'
 
 
@@ -75,6 +76,7 @@ export default function Contact(props) {
           <li>GraphQL</li>
         </ul>
       </div>
+      <Footer></Footer>
 
     </>
     

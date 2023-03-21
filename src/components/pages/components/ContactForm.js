@@ -65,7 +65,7 @@ const styles = {
   },
   card : {
     background: 'rgba(4,22,90,0.5)',
-    width: '40%',
+    width: '80%',
     borderRadius: '4rem',
   },
   text: {

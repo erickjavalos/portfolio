@@ -10,7 +10,6 @@ import Navigation from './Navigation';
 function Header(props) {
   return (
     <Navigation currentPage={props.currentPage} handlePageChange={props.handlePageChange}></Navigation>
-    
   );
 }
 

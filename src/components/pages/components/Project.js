@@ -26,14 +26,23 @@ const styles = {
 
 
 export default function Project(props) {
+  const reroute = () => {
+    window.location.href = props.deployedLink;
+  }
   return (
     <>
       <div className="project card-hover">
-        <a className="text-decoration-none" href={props.deployedLink}>
-          <img className="portfolio-img" style={styles.portfolioImg}src={props.projectImg}></img>
-        </a>
-        <h1 className="text text-sum">{props.projectName} <a href={props.gitRepo}><img className="logo-hover"style={styles.logoImg}src={gitLogo}></img></a></h1>
-        <p className="text text-sum">{props.projectSum}</p>
+        {/* redirect to page */}
+        <div 
+          onClick={reroute}
+          style={{cursor: "pointer"}}
+          tabIndex="1"
+        >
+          {/* display content of props variables for each project */}
+          <img className="portfolio-img" style={styles.portfolioImg}src={props.projectImg} alt="portfolio"></img>
+          <p className="text text-sum">{props.projectName} <a href={props.gitRepo}><img className="logo-hover"style={styles.logoImg}src={gitLogo} alt='gitlogo'></img></a></p>
+          <p className="text text-sum">{props.projectSum}</p>
+        </div>
       </div>
     </>
   );
