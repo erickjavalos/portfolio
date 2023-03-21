@@ -24,9 +24,9 @@ export default function Project(props) {
       <div className="project card-hover">
         <a className="text-decoration-none" href={props.deployedLink}>
           <img className="portfolio-img" style={styles.portfolioImg}src={props.projectImg}></img>
-          <h1 className="text text-sum">{props.projectName} <a href={props.gitRepo}><img className="logo-hover"style={styles.logoImg}src={gitLogo}></img></a></h1>
-          <p className="text text-sum">{props.projectSum}</p>
         </a>
+        <h1 className="text text-sum">{props.projectName} <a href={props.gitRepo}><img className="logo-hover"style={styles.logoImg}src={gitLogo}></img></a></h1>
+        <p className="text text-sum">{props.projectSum}</p>
       </div>
     </>
     // <>
