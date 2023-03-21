@@ -40,8 +40,8 @@ html {
 
 .project{
     width: 500px;
-    height: 300px;
-    margin: 10px;
+    height: 10%;
+    /* margin: 10px; */
     /* line-height: 150px; */
     color: white;
     font-weight: bold;
@@ -51,7 +51,7 @@ html {
 
 .text {
     position: relative;
-    top: -165px;
+    top: -150px;
     color: white;
     font-size: 0.9rem;
     visibility: hidden;
