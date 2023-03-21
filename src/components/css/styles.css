@@ -100,6 +100,32 @@ html {
     color: green;
 }
 
+/* resume css */
+
+.resume{
+    background-color: red;
+    width: 500px;
+    height: 300px;
+    margin: 10px;
+    line-height: 150px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.experiences { 
+    text-align:center
+    /* padding-left:120px;  */
+}
+li {
+    list-style-type: none
+}
+li span {
+    /* position: relative; */
+    /* left: -230px; */
+  }
 /* .cards-portfolio {
     width:95%;
     display: flex;
