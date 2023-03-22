@@ -13,10 +13,6 @@ The web application contains 4 pages of information about me, a portfolio of pro
 * React
 * Heroku 
 
-## Screenshot
-
-
-
 ## Link to Deployed Site
 
 https://erick-avalos-portfolio.herokuapp.com/#resume
