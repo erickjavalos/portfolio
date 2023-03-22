@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.9dd9cf72.css",
+    "main.css": "/static/css/main.908eb77b.css",
     "main.js": "/static/js/main.2c358e3a.js",
     "static/media/pfp.png": "/static/media/pfp.ecdbc694e3c288c244e6.png",
     "static/media/build-dragon.png": "/static/media/build-dragon.d113429afbb8c4c785ad.png",
@@ -14,11 +14,11 @@
     "static/media/workday-planner.png": "/static/media/workday-planner.35155da2c0c2cd552521.png",
     "static/media/Engineering.pdf": "/static/media/Engineering.9027aa3f940a0f0651bb.pdf",
     "index.html": "/index.html",
-    "main.9dd9cf72.css.map": "/static/css/main.9dd9cf72.css.map",
+    "main.908eb77b.css.map": "/static/css/main.908eb77b.css.map",
     "main.2c358e3a.js.map": "/static/js/main.2c358e3a.js.map"
   },
   "entrypoints": [
-    "static/css/main.9dd9cf72.css",
+    "static/css/main.908eb77b.css",
     "static/js/main.2c358e3a.js"
   ]
 }

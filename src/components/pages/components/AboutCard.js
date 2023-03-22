@@ -27,7 +27,7 @@ export default function AboutCard(props) {
         <Card.Title className="card-title-size" style={styles.titleSize}> About Me</Card.Title>
         {/* pfp image */}
         <Card.Img variant="top" src={props.pfp} className="m-3 pfp"style={{width: '150px',height:'150px', borderRadius: '30%'}} />
-        {/* text */}
+          {/* text */}
           <Card.Text className='card-text-size m-4' style={styles.descriptionSize}>
           My name is Erick, I am currently 25 years old based out of Los Angeles, Ca. In 2020, I received a bachelors degree in Electrical Engineering with a specialization in Signals and Systems. 
           </Card.Text>
